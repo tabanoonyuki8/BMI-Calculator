@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap" rel="stylesheet">
+    <title>BMI Calculator</title>
+</head>
+<body> 
+  <div>
+    <h1 class="header">BMI <span class="span-header">Calculator</span> 
+        <marquee class="style-header" direction="right" scrollamount="15" > <h2>Calculate your BMI here</h2></marquee></h1>
+    
+  </div>  
+<section class="container">
+   <div class="calculateAreaSec">
+    <h2>What is <span class="span-section">BMI?</span></h2>
+    <br/>
+    <p class="paragraph">
+        BMI, which stands for Body Mass Index, is a numerical value calculated from a person's height and weight. It is a widely used and simple method to categorize individuals into different weight categories, helping assess whether a person is underweight, normal weight, overweight, or obese. BMI is a useful tool for quickly gauging whether a person's weight falls within a healthy range.
+    </p>
+    <br/>
+    <ul class="ulClass">
+        <li>BMI is often used by healthcare professionals as an initial screening tool to assess the risk of weight-related health conditions, such as heart disease, diabetes, and hypertension. However, a comprehensive health assessment should consider other factors, including waist circumference, diet, physical activity, and medical history.</li>
+        <li>
+            While BMI provides valuable information, it should not be the sole determinant of an individual's health status. It's essential to consult with a healthcare provider for a more comprehensive evaluation and personalized recommendations.
+        </li>
+        <li>
+            In summary, BMI is a numerical value derived from a person's height and weight, used to categorize individuals into weight categories. While it provides a quick assessment of weight status, it has limitations and should be interpreted alongside other health indicators for a comprehensive evaluation of an individual's health.
+        </li>
+    </ul>
+   </div>
+
+   <img src="/images/one.jpg" alt="">
+  <br/>
+</section>
+    <br/>
+    <div class="container">
+        <img src="/images/Capture.PNG" alt="">
+   <div class="calculateArea">
+    <label class="label" for="gender">Gender:</label>
+    <select id="gender">
+        <option  value="male">Male</option>
+        <option value="female">Female</option>
+    </select><br><br>
+    <label class="label" for="height">Height  (in meters) :  </label>
+    <input class="label" type="number" id="height" step="0.01"><br><br>
+    
+    <label class="label" for="weight">Weight (in kilogm)  : </label>
+    <input class="label" type="number" id="weight" step="0.01"><br><br>
+    
+    <button class="label btn" onclick="calculateBMI()">Calculate BMI</button><br><br>
+
+    <div class="label resultClass" id="result"></div>
+   </div>
+
+    </div>
+<!-- another -->
+<div class="card-container">
+
+<div class="card">
+    <h2>Underweight</h2>
+   <ol>
+    <li>Increase Caloric Intake</li>
+    <br/>
+    <li> Choose Nutrient-Rich Foods</li>
+    <br>
+    <li> Protein Intake</li><br>
+    <li>Avoid Empty Calories</li>
+   </ol>
+</div>
+<div class="card">
+    <h2> Normal Weight</h2>
+    <ol>
+        <li>Consume a balanced diet</li>
+        <br/>
+        <li>Be mindful of portion sizes</li>
+        <br>
+        <li>Drink water throughout the day</li><br>
+        <li>Regular Physical Activity</li>
+       </ol>
+</div>
+<div class="card">
+    <h2>Overweight</h2>
+    <ol>
+        <li>Physical activity plays a crucial role</li>
+        <br/>
+        <li>Exercise has positive effects on mental health</li>
+        <br>
+        <li>Drink water throughout the day</li><br>
+        <li>Activities like yoga and stretching exercises</li>
+       </ol>
+</div>
+<div class="card">
+    <h2> Obese</h2>
+    <ol>
+        <li>Consult a Healthcare Professional</li>
+        <br/>
+        <li>Set achievable and realistic weight loss goals</li>
+        <br>
+        <li>Be mindful of portion sizes</li><br>
+        <li>Engage in regular physical activity</li>
+       </ol>
+</div>
+</div>
+<br>
+<hr>
+<footer class="footer">
+    <p>&copy;2023 coding with us </p>
+</footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
